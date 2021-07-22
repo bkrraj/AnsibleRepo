@@ -1,0 +1,12 @@
+openssl passwd -1 Password1
+openssl passwd -1 Password1
+openssl passwd -salt TAyTZs0m -1 Password1
+ansible server00 -m debug -a "msg={{ 'mypassword' | password_hash('md5', 'mysecret') }}"
+ansible server01 -m debug -a "msg={{ 'mypassword' | password_hash('md5', 'mysecret') }}"
+ansible server02 -m debug -a "msg={{ 'mypassword' | password_hash('md5', 'mysecret') }}"
+ansible server03 -m debug -a "msg={{ 'mypassword' | password_hash('md5', 'mysecret') }}"
+ansible server04 -m debug -a "msg={{ 'mypassword' | password_hash('md5', 'mysecret') }}"
+ansible server05 -m debug -a "msg={{ 'mypassword' | password_hash('md5', 'mysecret') }}"
+ansible server06 -m debug -a "msg={{ 'mypassword' | password_hash('md5', 'mysecret') }}"
+ansible server07 -m debug -a "msg={{ 'mypassword' | password_hash('md5', 'mysecret') }}"
+ansible server08 -m debug -a "msg={{ 'mypassword' | password_hash('md5', 'mysecret') }}"

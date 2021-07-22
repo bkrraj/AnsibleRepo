@@ -1,0 +1,12 @@
+[webservers]
+server00	ansible_host=server00.ora.com
+server01        ansible_host=server01.ora.com
+[loadbalancers]
+server02	ansible_host=server02.ora.com
+server03       	ansible_host=server03.ora.com
+server04       	ansible_host=server04.ora.com
+server05       	ansible_host=server05.ora.com
+server06       	ansible_host=server06.ora.com
+server07       	ansible_host=server07.ora.com
+server08       	ansible_host=server08.ora.com
+
