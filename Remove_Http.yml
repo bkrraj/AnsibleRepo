@@ -6,6 +6,6 @@
     tasks:
           - name: Uninstall Software
             package:
-              name: HTTP
+              name: HTTP,PHP
               state: absent
 ...
