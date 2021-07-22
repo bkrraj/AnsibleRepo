@@ -1,0 +1,11 @@
+---
+  - name: Remove Installed HTTP
+    hosts: all
+    become: true
+    gather_facts: false
+    tasks:
+          - name: Uninstall Software
+            package:
+              name: HTTP
+              state: absent
+...
