@@ -8,4 +8,7 @@
             package:
               name: bash-completion
               state: present
+          - name: Show Hostname
+            debug:
+              msg: "This Host is {{ ansible_hostname }}"
 ...
